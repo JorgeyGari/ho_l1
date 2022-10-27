@@ -1,0 +1,32 @@
+#
+# Practice 1: Linear Programming - Heuristics and Optimization
+#
+# Optimal solution to minimize cost
+#
+
+/* ------ DATA ------ */
+
+data;
+
+/* sets */
+set STOPS := Parking S1 S2 S3 School;
+set PATHS := P-S1 P-S2 P-S3 S1-S2 S1-S3 S2-S3 S1-Sc S2-Sc S3-Sc;
+
+/* parameters */
+param km :=
+	P-S1	8
+	P-S2	10
+	P-S3	10
+	S1-S2	3
+	S1-S3	7
+	S2-S3	5
+	S1-Sc	6
+	S2-Sc	7
+	S3-Sc	4;
+
+param students :=
+	Parking	0
+	S1		15
+	S2		5
+	S3		10
+	School	0;
