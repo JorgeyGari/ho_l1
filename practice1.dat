@@ -9,24 +9,28 @@
 data;
 
 /* sets */
-set STOPS := Parking S1 S2 S3 School;
-set PATHS := P-S1 P-S2 P-S3 S1-S2 S1-S3 S2-S3 S1-Sc S2-Sc S3-Sc;
+set NODES := "Parking" "S1" "S2" "S3" "School";
+
+set STOPS := "S1" "S2" "S3";
 
 /* parameters */
-param km :=
-	P-S1	8
-	P-S2	10
-	P-S3	10
-	S1-S2	3
-	S1-S3	7
-	S2-S3	5
-	S1-Sc	6
-	S2-Sc	7
-	S3-Sc	4;
+param costs : 		"Parking"	"S1"	"S2"	"S3"	"School" :=
+		"Parking"	9999		8		10		10		9999
+		"S1"		9999		9999	3		7		6
+		"S2"		9999		3		9999	5		7
+		"S3"		9999		7		7		9999	4
+		"School"	9999		9999	9999	9999	9999;
 
 param students :=
-	Parking	0
-	S1		15
-	S2		5
-	S3		10
-	School	0;
+	"Parking"	0
+	"S1"		15
+	"S2"		5
+	"S3"		10
+	"School"	0;
+
+param cost_per_km := 5;
+param cost_per_bus := 120;
+param capacity := 20;
+param number_buses := 3;
+
+end;
