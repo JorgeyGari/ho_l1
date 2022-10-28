@@ -3,6 +3,8 @@
 #
 # Optimal solution to minimize cost
 #
+# Part 1
+#
 
 /* ------ DATA ------ */
 
@@ -14,7 +16,7 @@ set NODES := "Parking" "S1" "S2" "S3" "School";
 set STOPS := "S1" "S2" "S3";
 
 /* parameters */
-param costs : 		"Parking"	"S1"	"S2"	"S3"	"School" :=
+param km : 		"Parking"	"S1"	"S2"	"S3"	"School" :=
 		"Parking"	9999		8		10		10		9999
 		"S1"		9999		9999	3		7		6
 		"S2"		9999		3		9999	5		7
