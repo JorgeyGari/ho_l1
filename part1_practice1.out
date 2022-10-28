@@ -1,0 +1,163 @@
+Problem:    practice1
+Rows:       37
+Columns:    50 (25 integer, 25 binary)
+Non-zeros:  142
+Status:     INTEGER OPTIMAL
+Objective:  mincosts = 400 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 mincosts                  400                             
+     2 buses_used                  0            -0             = 
+     3 maximum_buses
+                                   2                           3 
+     4 arrival[S1]                 1             1             = 
+     5 arrival[S2]                 1             1             = 
+     6 arrival[S3]                 1             1             = 
+     7 departure[S1]
+                                   1             1             = 
+     8 departure[S2]
+                                   1             1             = 
+     9 departure[S3]
+                                   1             1             = 
+    10 control_flow[S1]
+                                  15            15             = 
+    11 control_flow[S2]
+                                   5             5             = 
+    12 control_flow[S3]
+                                  10            10             = 
+    13 flow_accum[Parking,Parking]
+                                   0                          -0 
+    14 flow_accum[Parking,S1]
+                                 -20                          -0 
+    15 flow_accum[Parking,S2]
+                                   0                          -0 
+    16 flow_accum[Parking,S3]
+                                 -20                          -0 
+    17 flow_accum[Parking,School]
+                                   0                          -0 
+    18 flow_accum[S1,Parking]
+                                   0                          -0 
+    19 flow_accum[S1,S1]
+                                   0                          -0 
+    20 flow_accum[S1,S2]
+                                  -5                          -0 
+    21 flow_accum[S1,S3]
+                                   0                          -0 
+    22 flow_accum[S1,School]
+                                   0                          -0 
+    23 flow_accum[S2,Parking]
+                                   0                          -0 
+    24 flow_accum[S2,S1]
+                                   0                          -0 
+    25 flow_accum[S2,S2]
+                                   0                          -0 
+    26 flow_accum[S2,S3]
+                                   0                          -0 
+    27 flow_accum[S2,School]
+                                   0                          -0 
+    28 flow_accum[S3,Parking]
+                                   0                          -0 
+    29 flow_accum[S3,S1]
+                                   0                          -0 
+    30 flow_accum[S3,S2]
+                                   0                          -0 
+    31 flow_accum[S3,S3]
+                                   0                          -0 
+    32 flow_accum[S3,School]
+                                 -10                          -0 
+    33 flow_accum[School,Parking]
+                                   0                          -0 
+    34 flow_accum[School,S1]
+                                   0                          -0 
+    35 flow_accum[School,S2]
+                                   0                          -0 
+    36 flow_accum[School,S3]
+                                   0                          -0 
+    37 flow_accum[School,School]
+                                   0                          -0 
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 x[Parking,Parking]
+                    *              0             0             1 
+     2 x[Parking,S1]
+                    *              1             0             1 
+     3 x[Parking,S2]
+                    *              0             0             1 
+     4 x[Parking,S3]
+                    *              1             0             1 
+     5 x[Parking,School]
+                    *              0             0             1 
+     6 x[S1,Parking]
+                    *              0             0             1 
+     7 x[S1,S1]     *              0             0             1 
+     8 x[S1,S2]     *              1             0             1 
+     9 x[S1,S3]     *              0             0             1 
+    10 x[S1,School] *              0             0             1 
+    11 x[S2,Parking]
+                    *              0             0             1 
+    12 x[S2,S1]     *              0             0             1 
+    13 x[S2,S2]     *              0             0             1 
+    14 x[S2,S3]     *              0             0             1 
+    15 x[S2,School] *              1             0             1 
+    16 x[S3,Parking]
+                    *              0             0             1 
+    17 x[S3,S1]     *              0             0             1 
+    18 x[S3,S2]     *              0             0             1 
+    19 x[S3,S3]     *              0             0             1 
+    20 x[S3,School] *              1             0             1 
+    21 x[School,Parking]
+                    *              0             0             1 
+    22 x[School,S1] *              0             0             1 
+    23 x[School,S2] *              0             0             1 
+    24 x[School,S3] *              0             0             1 
+    25 x[School,School]
+                    *              0             0             1 
+    26 f[S1,Parking]
+                                   0             0               
+    27 f[S1,S1]                    0             0               
+    28 f[S1,S2]                   15             0               
+    29 f[S1,S3]                    0             0               
+    30 f[S1,School]                0             0               
+    31 f[Parking,S1]
+                                   0             0               
+    32 f[S2,S1]                    0             0               
+    33 f[S3,S1]                    0             0               
+    34 f[School,S1]                0             0               
+    35 f[S2,Parking]
+                                   0             0               
+    36 f[S2,S2]                    0             0               
+    37 f[S2,S3]                    0             0               
+    38 f[S2,School]               20             0               
+    39 f[Parking,S2]
+                                   0             0               
+    40 f[S3,S2]                    0             0               
+    41 f[School,S2]                0             0               
+    42 f[S3,Parking]
+                                   0             0               
+    43 f[S3,S3]                    0             0               
+    44 f[S3,School]               10             0               
+    45 f[Parking,S3]
+                                   0             0               
+    46 f[School,S3]                0             0               
+    47 f[Parking,Parking]
+                                   0             0               
+    48 f[Parking,School]
+                                   0             0               
+    49 f[School,Parking]
+                                   0             0               
+    50 f[School,School]
+                                   0             0               
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 3.55e-15 on row 11
+        max.rel.err = 8.67e-17 on row 11
+        High quality
+
+KKT.PB: max.abs.err = 1.92e-14 on row 21
+        max.rel.err = 1.92e-14 on row 21
+        High quality
+
+End of output
