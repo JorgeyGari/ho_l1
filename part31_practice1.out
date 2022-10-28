@@ -1,0 +1,641 @@
+Problem:    practice1_part2
+Rows:       264
+Columns:    74 (49 integer, 49 binary)
+Non-zeros:  238
+Status:     INTEGER OPTIMAL
+Objective:  mincosts = 380 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 mincosts                  380                             
+     2 buses_used                  0            -0             = 
+     3 maximum_buses
+                                   2                           3 
+     4 arrival[S1]                 1                           1 
+     5 arrival[S2]                 1                           1 
+     6 arrival[S3]                 0                           1 
+     7 departure[S1]
+                                   1                           1 
+     8 departure[S2]
+                                   0                           1 
+     9 departure[S3]
+                                   1                           1 
+    10 control_flow[S1]
+                                   0            -0             = 
+    11 control_flow[S2]
+                                   0            -0             = 
+    12 control_flow[S3]
+                                   0            -0             = 
+    13 flow_accum[Parking,Parking]
+                                   0                          -0 
+    14 flow_accum[Parking,S1]
+                                  -4                          -0 
+    15 flow_accum[Parking,S2]
+                                  -4                          -0 
+    16 flow_accum[Parking,S3]
+                                   0                          -0 
+    17 flow_accum[Parking,School]
+                                   0                          -0 
+    18 flow_accum[S1,Parking]
+                                   0                          -0 
+    19 flow_accum[S1,S1]
+                                   0                          -0 
+    20 flow_accum[S1,S2]
+                                   0                          -0 
+    21 flow_accum[S1,S3]
+                                   0                          -0 
+    22 flow_accum[S1,School]
+                                   0                          -0 
+    23 flow_accum[S2,Parking]
+                                   0                          -0 
+    24 flow_accum[S2,S1]
+                                   0                          -0 
+    25 flow_accum[S2,S2]
+                                   0                          -0 
+    26 flow_accum[S2,S3]
+                                   0                          -0 
+    27 flow_accum[S2,School]
+                                   0                          -0 
+    28 flow_accum[S3,Parking]
+                                   0                          -0 
+    29 flow_accum[S3,S1]
+                                   0                          -0 
+    30 flow_accum[S3,S2]
+                                   0                          -0 
+    31 flow_accum[S3,S3]
+                                   0                          -0 
+    32 flow_accum[S3,School]
+                                   0                          -0 
+    33 flow_accum[School,Parking]
+                                   0                          -0 
+    34 flow_accum[School,S1]
+                                   0                          -0 
+    35 flow_accum[School,S2]
+                                   0                          -0 
+    36 flow_accum[School,S3]
+                                   0                          -0 
+    37 flow_accum[School,School]
+                                   0                          -0 
+    38 students_per_stop[S1]
+                                   4                           4 
+    39 students_per_stop[S2]
+                                   0                           4 
+    40 students_per_stop[S3]
+                                   4                           4 
+    41 stops_per_student[A1]
+                                   1             1             = 
+    42 stops_per_student[A2]
+                                   1             1             = 
+    43 stops_per_student[A3]
+                                   1             1             = 
+    44 stops_per_student[A4]
+                                   1             1             = 
+    45 stops_per_student[A5]
+                                   1             1             = 
+    46 stops_per_student[A6]
+                                   1             1             = 
+    47 stops_per_student[A7]
+                                   1             1             = 
+    48 stops_per_student[A8]
+                                   1             1             = 
+    49 control_students[S1,A1]
+                                   1                           1 
+    50 control_students[S1,A2]
+                                   1                           1 
+    51 control_students[S1,A3]
+                                   1                           1 
+    52 control_students[S1,A4]
+                                   1                           1 
+    53 control_students[S1,A5]
+                                   0                           1 
+    54 control_students[S1,A6]
+                                   0                          -0 
+    55 control_students[S1,A7]
+                                   0                          -0 
+    56 control_students[S1,A8]
+                                   0                          -0 
+    57 control_students[S2,A1]
+                                   0                          -0 
+    58 control_students[S2,A2]
+                                   0                          -0 
+    59 control_students[S2,A3]
+                                   0                          -0 
+    60 control_students[S2,A4]
+                                   0                           1 
+    61 control_students[S2,A5]
+                                   0                           1 
+    62 control_students[S2,A6]
+                                   0                          -0 
+    63 control_students[S2,A7]
+                                   0                          -0 
+    64 control_students[S2,A8]
+                                   0                          -0 
+    65 control_students[S3,A1]
+                                   0                          -0 
+    66 control_students[S3,A2]
+                                   0                          -0 
+    67 control_students[S3,A3]
+                                   0                          -0 
+    68 control_students[S3,A4]
+                                   0                           1 
+    69 control_students[S3,A5]
+                                   1                           1 
+    70 control_students[S3,A6]
+                                   1                           1 
+    71 control_students[S3,A7]
+                                   1                           1 
+    72 control_students[S3,A8]
+                                   1                           1 
+    73 siblings_together[A1,A1,S1]
+                                   0            -0             = 
+    74 siblings_together[A1,A1,S2]
+                                   0            -0             = 
+    75 siblings_together[A1,A1,S3]
+                                   0            -0             = 
+    76 siblings_together[A1,A2,S1]
+                                   0            -0             = 
+    77 siblings_together[A1,A2,S2]
+                                   0            -0             = 
+    78 siblings_together[A1,A2,S3]
+                                   0            -0             = 
+    79 siblings_together[A1,A3,S1]
+                                   0            -0             = 
+    80 siblings_together[A1,A3,S2]
+                                   0            -0             = 
+    81 siblings_together[A1,A3,S3]
+                                   0            -0             = 
+    82 siblings_together[A1,A4,S1]
+                                   0            -0             = 
+    83 siblings_together[A1,A4,S2]
+                                   0            -0             = 
+    84 siblings_together[A1,A4,S3]
+                                   0            -0             = 
+    85 siblings_together[A1,A5,S1]
+                                   0            -0             = 
+    86 siblings_together[A1,A5,S2]
+                                   0            -0             = 
+    87 siblings_together[A1,A5,S3]
+                                   0            -0             = 
+    88 siblings_together[A1,A6,S1]
+                                   0            -0             = 
+    89 siblings_together[A1,A6,S2]
+                                   0            -0             = 
+    90 siblings_together[A1,A6,S3]
+                                   0            -0             = 
+    91 siblings_together[A1,A7,S1]
+                                   0            -0             = 
+    92 siblings_together[A1,A7,S2]
+                                   0            -0             = 
+    93 siblings_together[A1,A7,S3]
+                                   0            -0             = 
+    94 siblings_together[A1,A8,S1]
+                                   0            -0             = 
+    95 siblings_together[A1,A8,S2]
+                                   0            -0             = 
+    96 siblings_together[A1,A8,S3]
+                                   0            -0             = 
+    97 siblings_together[A2,A1,S1]
+                                   0            -0             = 
+    98 siblings_together[A2,A1,S2]
+                                   0            -0             = 
+    99 siblings_together[A2,A1,S3]
+                                   0            -0             = 
+   100 siblings_together[A2,A2,S1]
+                                   0            -0             = 
+   101 siblings_together[A2,A2,S2]
+                                   0            -0             = 
+   102 siblings_together[A2,A2,S3]
+                                   0            -0             = 
+   103 siblings_together[A2,A3,S1]
+                                   0            -0             = 
+   104 siblings_together[A2,A3,S2]
+                                   0            -0             = 
+   105 siblings_together[A2,A3,S3]
+                                   0            -0             = 
+   106 siblings_together[A2,A4,S1]
+                                   0            -0             = 
+   107 siblings_together[A2,A4,S2]
+                                   0            -0             = 
+   108 siblings_together[A2,A4,S3]
+                                   0            -0             = 
+   109 siblings_together[A2,A5,S1]
+                                   0            -0             = 
+   110 siblings_together[A2,A5,S2]
+                                   0            -0             = 
+   111 siblings_together[A2,A5,S3]
+                                   0            -0             = 
+   112 siblings_together[A2,A6,S1]
+                                   0            -0             = 
+   113 siblings_together[A2,A6,S2]
+                                   0            -0             = 
+   114 siblings_together[A2,A6,S3]
+                                   0            -0             = 
+   115 siblings_together[A2,A7,S1]
+                                   0            -0             = 
+   116 siblings_together[A2,A7,S2]
+                                   0            -0             = 
+   117 siblings_together[A2,A7,S3]
+                                   0            -0             = 
+   118 siblings_together[A2,A8,S1]
+                                   0            -0             = 
+   119 siblings_together[A2,A8,S2]
+                                   0            -0             = 
+   120 siblings_together[A2,A8,S3]
+                                   0            -0             = 
+   121 siblings_together[A3,A1,S1]
+                                   0            -0             = 
+   122 siblings_together[A3,A1,S2]
+                                   0            -0             = 
+   123 siblings_together[A3,A1,S3]
+                                   0            -0             = 
+   124 siblings_together[A3,A2,S1]
+                                   0            -0             = 
+   125 siblings_together[A3,A2,S2]
+                                   0            -0             = 
+   126 siblings_together[A3,A2,S3]
+                                   0            -0             = 
+   127 siblings_together[A3,A3,S1]
+                                   0            -0             = 
+   128 siblings_together[A3,A3,S2]
+                                   0            -0             = 
+   129 siblings_together[A3,A3,S3]
+                                   0            -0             = 
+   130 siblings_together[A3,A4,S1]
+                                   0            -0             = 
+   131 siblings_together[A3,A4,S2]
+                                   0            -0             = 
+   132 siblings_together[A3,A4,S3]
+                                   0            -0             = 
+   133 siblings_together[A3,A5,S1]
+                                   0            -0             = 
+   134 siblings_together[A3,A5,S2]
+                                   0            -0             = 
+   135 siblings_together[A3,A5,S3]
+                                   0            -0             = 
+   136 siblings_together[A3,A6,S1]
+                                   0            -0             = 
+   137 siblings_together[A3,A6,S2]
+                                   0            -0             = 
+   138 siblings_together[A3,A6,S3]
+                                   0            -0             = 
+   139 siblings_together[A3,A7,S1]
+                                   0            -0             = 
+   140 siblings_together[A3,A7,S2]
+                                   0            -0             = 
+   141 siblings_together[A3,A7,S3]
+                                   0            -0             = 
+   142 siblings_together[A3,A8,S1]
+                                   0            -0             = 
+   143 siblings_together[A3,A8,S2]
+                                   0            -0             = 
+   144 siblings_together[A3,A8,S3]
+                                   0            -0             = 
+   145 siblings_together[A4,A1,S1]
+                                   0            -0             = 
+   146 siblings_together[A4,A1,S2]
+                                   0            -0             = 
+   147 siblings_together[A4,A1,S3]
+                                   0            -0             = 
+   148 siblings_together[A4,A2,S1]
+                                   0            -0             = 
+   149 siblings_together[A4,A2,S2]
+                                   0            -0             = 
+   150 siblings_together[A4,A2,S3]
+                                   0            -0             = 
+   151 siblings_together[A4,A3,S1]
+                                   0            -0             = 
+   152 siblings_together[A4,A3,S2]
+                                   0            -0             = 
+   153 siblings_together[A4,A3,S3]
+                                   0            -0             = 
+   154 siblings_together[A4,A4,S1]
+                                   0            -0             = 
+   155 siblings_together[A4,A4,S2]
+                                   0            -0             = 
+   156 siblings_together[A4,A4,S3]
+                                   0            -0             = 
+   157 siblings_together[A4,A5,S1]
+                                   0            -0             = 
+   158 siblings_together[A4,A5,S2]
+                                   0            -0             = 
+   159 siblings_together[A4,A5,S3]
+                                   0            -0             = 
+   160 siblings_together[A4,A6,S1]
+                                   0            -0             = 
+   161 siblings_together[A4,A6,S2]
+                                   0            -0             = 
+   162 siblings_together[A4,A6,S3]
+                                   0            -0             = 
+   163 siblings_together[A4,A7,S1]
+                                   0            -0             = 
+   164 siblings_together[A4,A7,S2]
+                                   0            -0             = 
+   165 siblings_together[A4,A7,S3]
+                                   0            -0             = 
+   166 siblings_together[A4,A8,S1]
+                                   0            -0             = 
+   167 siblings_together[A4,A8,S2]
+                                   0            -0             = 
+   168 siblings_together[A4,A8,S3]
+                                   0            -0             = 
+   169 siblings_together[A5,A1,S1]
+                                   0            -0             = 
+   170 siblings_together[A5,A1,S2]
+                                   0            -0             = 
+   171 siblings_together[A5,A1,S3]
+                                   0            -0             = 
+   172 siblings_together[A5,A2,S1]
+                                   0            -0             = 
+   173 siblings_together[A5,A2,S2]
+                                   0            -0             = 
+   174 siblings_together[A5,A2,S3]
+                                   0            -0             = 
+   175 siblings_together[A5,A3,S1]
+                                   0            -0             = 
+   176 siblings_together[A5,A3,S2]
+                                   0            -0             = 
+   177 siblings_together[A5,A3,S3]
+                                   0            -0             = 
+   178 siblings_together[A5,A4,S1]
+                                   0            -0             = 
+   179 siblings_together[A5,A4,S2]
+                                   0            -0             = 
+   180 siblings_together[A5,A4,S3]
+                                   0            -0             = 
+   181 siblings_together[A5,A5,S1]
+                                   0            -0             = 
+   182 siblings_together[A5,A5,S2]
+                                   0            -0             = 
+   183 siblings_together[A5,A5,S3]
+                                   0            -0             = 
+   184 siblings_together[A5,A6,S1]
+                                   0            -0             = 
+   185 siblings_together[A5,A6,S2]
+                                   0            -0             = 
+   186 siblings_together[A5,A6,S3]
+                                   0            -0             = 
+   187 siblings_together[A5,A7,S1]
+                                   0            -0             = 
+   188 siblings_together[A5,A7,S2]
+                                   0            -0             = 
+   189 siblings_together[A5,A7,S3]
+                                   0            -0             = 
+   190 siblings_together[A5,A8,S1]
+                                   0            -0             = 
+   191 siblings_together[A5,A8,S2]
+                                   0            -0             = 
+   192 siblings_together[A5,A8,S3]
+                                   0            -0             = 
+   193 siblings_together[A6,A1,S1]
+                                   0            -0             = 
+   194 siblings_together[A6,A1,S2]
+                                   0            -0             = 
+   195 siblings_together[A6,A1,S3]
+                                   0            -0             = 
+   196 siblings_together[A6,A2,S1]
+                                   0            -0             = 
+   197 siblings_together[A6,A2,S2]
+                                   0            -0             = 
+   198 siblings_together[A6,A2,S3]
+                                   0            -0             = 
+   199 siblings_together[A6,A3,S1]
+                                   0            -0             = 
+   200 siblings_together[A6,A3,S2]
+                                   0            -0             = 
+   201 siblings_together[A6,A3,S3]
+                                   0            -0             = 
+   202 siblings_together[A6,A4,S1]
+                                   0            -0             = 
+   203 siblings_together[A6,A4,S2]
+                                   0            -0             = 
+   204 siblings_together[A6,A4,S3]
+                                   0            -0             = 
+   205 siblings_together[A6,A5,S1]
+                                   0            -0             = 
+   206 siblings_together[A6,A5,S2]
+                                   0            -0             = 
+   207 siblings_together[A6,A5,S3]
+                                   0            -0             = 
+   208 siblings_together[A6,A6,S1]
+                                   0            -0             = 
+   209 siblings_together[A6,A6,S2]
+                                   0            -0             = 
+   210 siblings_together[A6,A6,S3]
+                                   0            -0             = 
+   211 siblings_together[A6,A7,S1]
+                                   0            -0             = 
+   212 siblings_together[A6,A7,S2]
+                                   0            -0             = 
+   213 siblings_together[A6,A7,S3]
+                                   0            -0             = 
+   214 siblings_together[A6,A8,S1]
+                                   0            -0             = 
+   215 siblings_together[A6,A8,S2]
+                                   0            -0             = 
+   216 siblings_together[A6,A8,S3]
+                                   0            -0             = 
+   217 siblings_together[A7,A1,S1]
+                                   0            -0             = 
+   218 siblings_together[A7,A1,S2]
+                                   0            -0             = 
+   219 siblings_together[A7,A1,S3]
+                                   0            -0             = 
+   220 siblings_together[A7,A2,S1]
+                                   0            -0             = 
+   221 siblings_together[A7,A2,S2]
+                                   0            -0             = 
+   222 siblings_together[A7,A2,S3]
+                                   0            -0             = 
+   223 siblings_together[A7,A3,S1]
+                                   0            -0             = 
+   224 siblings_together[A7,A3,S2]
+                                   0            -0             = 
+   225 siblings_together[A7,A3,S3]
+                                   0            -0             = 
+   226 siblings_together[A7,A4,S1]
+                                   0            -0             = 
+   227 siblings_together[A7,A4,S2]
+                                   0            -0             = 
+   228 siblings_together[A7,A4,S3]
+                                   0            -0             = 
+   229 siblings_together[A7,A5,S1]
+                                   0            -0             = 
+   230 siblings_together[A7,A5,S2]
+                                   0            -0             = 
+   231 siblings_together[A7,A5,S3]
+                                   0            -0             = 
+   232 siblings_together[A7,A6,S1]
+                                   0            -0             = 
+   233 siblings_together[A7,A6,S2]
+                                   0            -0             = 
+   234 siblings_together[A7,A6,S3]
+                                   0            -0             = 
+   235 siblings_together[A7,A7,S1]
+                                   0            -0             = 
+   236 siblings_together[A7,A7,S2]
+                                   0            -0             = 
+   237 siblings_together[A7,A7,S3]
+                                   0            -0             = 
+   238 siblings_together[A7,A8,S1]
+                                   0            -0             = 
+   239 siblings_together[A7,A8,S2]
+                                   0            -0             = 
+   240 siblings_together[A7,A8,S3]
+                                   0            -0             = 
+   241 siblings_together[A8,A1,S1]
+                                   0            -0             = 
+   242 siblings_together[A8,A1,S2]
+                                   0            -0             = 
+   243 siblings_together[A8,A1,S3]
+                                   0            -0             = 
+   244 siblings_together[A8,A2,S1]
+                                   0            -0             = 
+   245 siblings_together[A8,A2,S2]
+                                   0            -0             = 
+   246 siblings_together[A8,A2,S3]
+                                   0            -0             = 
+   247 siblings_together[A8,A3,S1]
+                                   0            -0             = 
+   248 siblings_together[A8,A3,S2]
+                                   0            -0             = 
+   249 siblings_together[A8,A3,S3]
+                                   0            -0             = 
+   250 siblings_together[A8,A4,S1]
+                                   0            -0             = 
+   251 siblings_together[A8,A4,S2]
+                                   0            -0             = 
+   252 siblings_together[A8,A4,S3]
+                                   0            -0             = 
+   253 siblings_together[A8,A5,S1]
+                                   0            -0             = 
+   254 siblings_together[A8,A5,S2]
+                                   0            -0             = 
+   255 siblings_together[A8,A5,S3]
+                                   0            -0             = 
+   256 siblings_together[A8,A6,S1]
+                                   0            -0             = 
+   257 siblings_together[A8,A6,S2]
+                                   0            -0             = 
+   258 siblings_together[A8,A6,S3]
+                                   0            -0             = 
+   259 siblings_together[A8,A7,S1]
+                                   0            -0             = 
+   260 siblings_together[A8,A7,S2]
+                                   0            -0             = 
+   261 siblings_together[A8,A7,S3]
+                                   0            -0             = 
+   262 siblings_together[A8,A8,S1]
+                                   0            -0             = 
+   263 siblings_together[A8,A8,S2]
+                                   0            -0             = 
+   264 siblings_together[A8,A8,S3]
+                                   0            -0             = 
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 x[Parking,Parking]
+                    *              0             0             1 
+     2 x[Parking,S1]
+                    *              1             0             1 
+     3 x[Parking,S2]
+                    *              1             0             1 
+     4 x[Parking,S3]
+                    *              0             0             1 
+     5 x[Parking,School]
+                    *              0             0             1 
+     6 x[S1,Parking]
+                    *              0             0             1 
+     7 x[S1,S1]     *              0             0             1 
+     8 x[S1,S2]     *              0             0             1 
+     9 x[S1,S3]     *              0             0             1 
+    10 x[S1,School] *              1             0             1 
+    11 x[S2,Parking]
+                    *              0             0             1 
+    12 x[S2,S1]     *              0             0             1 
+    13 x[S2,S2]     *              0             0             1 
+    14 x[S2,S3]     *              0             0             1 
+    15 x[S2,School] *              0             0             1 
+    16 x[S3,Parking]
+                    *              0             0             1 
+    17 x[S3,S1]     *              0             0             1 
+    18 x[S3,S2]     *              0             0             1 
+    19 x[S3,S3]     *              0             0             1 
+    20 x[S3,School] *              1             0             1 
+    21 x[School,Parking]
+                    *              0             0             1 
+    22 x[School,S1] *              0             0             1 
+    23 x[School,S2] *              0             0             1 
+    24 x[School,S3] *              0             0             1 
+    25 x[School,School]
+                    *              0             0             1 
+    26 f[S1,Parking]
+                                   0             0               
+    27 f[S1,S1]                    0             0               
+    28 f[S1,S2]                    0             0               
+    29 f[S1,S3]                    0             0               
+    30 f[S1,School]                4             0               
+    31 f[Parking,S1]
+                                   0             0               
+    32 f[S2,S1]                    0             0               
+    33 f[S3,S1]                    0             0               
+    34 f[School,S1]                0             0               
+    35 f[S2,Parking]
+                                   0             0               
+    36 f[S2,S2]                    0             0               
+    37 f[S2,S3]                    0             0               
+    38 f[S2,School]                0             0               
+    39 f[Parking,S2]
+                                   0             0               
+    40 f[S3,S2]                    0             0               
+    41 f[School,S2]                0             0               
+    42 f[S3,Parking]
+                                   0             0               
+    43 f[S3,S3]                    0             0               
+    44 f[S3,School]                4             0               
+    45 f[Parking,S3]
+                                   0             0               
+    46 f[School,S3]                0             0               
+    47 f[Parking,Parking]
+                                   0             0               
+    48 f[Parking,School]
+                                   0             0               
+    49 f[School,Parking]
+                                   0             0               
+    50 f[School,School]
+                                   0             0               
+    51 a[S1,A1]     *              1             0             1 
+    52 a[S1,A2]     *              1             0             1 
+    53 a[S1,A3]     *              1             0             1 
+    54 a[S1,A4]     *              1             0             1 
+    55 a[S1,A5]     *              0             0             1 
+    56 a[S1,A6]     *              0             0             1 
+    57 a[S1,A7]     *              0             0             1 
+    58 a[S1,A8]     *              0             0             1 
+    59 a[S2,A1]     *              0             0             1 
+    60 a[S2,A2]     *              0             0             1 
+    61 a[S2,A3]     *              0             0             1 
+    62 a[S2,A4]     *              0             0             1 
+    63 a[S2,A5]     *              0             0             1 
+    64 a[S2,A6]     *              0             0             1 
+    65 a[S2,A7]     *              0             0             1 
+    66 a[S2,A8]     *              0             0             1 
+    67 a[S3,A1]     *              0             0             1 
+    68 a[S3,A2]     *              0             0             1 
+    69 a[S3,A3]     *              0             0             1 
+    70 a[S3,A4]     *              0             0             1 
+    71 a[S3,A5]     *              1             0             1 
+    72 a[S3,A6]     *              1             0             1 
+    73 a[S3,A7]     *              1             0             1 
+    74 a[S3,A8]     *              1             0             1 
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output
