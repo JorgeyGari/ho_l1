@@ -1,4 +1,4 @@
-Lab assignment 1 for the course Heuristics and Optimization, imparted by Universidad Carlos III de Madrid in Spring 2022. Coded by Laura Belizón Merchán and Jorge Lázaro Ruiz.
+Lab assignment 1 for the course Heuristics and Optimization, imparted by Universidad Carlos III de Madrid in Fall 2022. Coded by Laura Belizón Merchán and Jorge Lázaro Ruiz.
 
 Linear programming model to find the optimal design for a public transport system.
 
